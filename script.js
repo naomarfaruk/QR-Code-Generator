@@ -15,3 +15,8 @@ function generateQR() {
     }, 1000)
   }
 }
+ qrText.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        generateQR()
+    }
+  });
